@@ -161,7 +161,7 @@
   align-items: center;
   justify-content: center;
   margin: auto;
-  max-width: 160px;
+  max-width: 200px;
   padding: 4rem 2rem;
   box-shadow: 20px 20px 0 0px rgba(0, 0, 0, 0.192);
   transition: 0.5s;
@@ -219,7 +219,7 @@
   border: 5px solid var(--primary);
   border-radius: 0px;
 }
-.portfolio-item .portfolio-image img {
+.portfolio-item .portfolio-image :is(img, video) {
   box-shadow: 50px 50px 0px 0px rgba(0, 0, 0, 0.288);
   position: relative;
   top: 60px;
@@ -236,7 +236,7 @@
     flex-direction: column;
   }
 
-  .portfolio-item .portfolio-image img {
+  .portfolio-item .portfolio-image :is(img, video) {
     box-shadow: none;
     top: 20px;
     left: 15px;
