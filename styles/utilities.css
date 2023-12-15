@@ -1,0 +1,155 @@
+/* ? Css Container Utilities */
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+/* Media Query for Tablets */
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+/* Media Query for Small Laptops and Desktops */
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+    /* Adjust the maximum width for small laptops and desktops */
+  }
+}
+
+/* Media Query for Large Laptops and Desktops */
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+    /* Adjust the maximum width for large laptops and desktops */
+  }
+}
+
+/* ? Css Flex Utilities */
+
+.flex {
+  display: flex;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.flex-row-reverse {
+  flex-direction: row-reverse;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.flex-col-reverse {
+  flex-direction: column-reverse;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.justify-start {
+  justify-content: flex-start;
+}
+
+.justify-end {
+  justify-content: flex-end;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-around {
+  justify-content: space-around;
+}
+
+.items-start {
+  align-items: flex-start;
+}
+
+.items-end {
+  align-items: flex-end;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.items-baseline {
+  align-items: baseline;
+}
+
+.items-stretch {
+  align-items: stretch;
+}
+ 
+
+/* Font Size Classes */
+.fs-12 { font-size: 12px; }
+.fs-14 { font-size: 14px; }
+.fs-16 { font-size: 16px; }
+.fs-18 { font-size: 18px; }
+.fs-20 { font-size: 20px; }
+.fs-24 { font-size: 24px; }
+.fs-28 { font-size: 28px; }
+.fs-32 { font-size: 32px; }
+.fs-36 { font-size: 36px; }
+.fs-40 { font-size: 40px; }
+.fs-48 { font-size: 48px; }
+.fs-56 { font-size: 56px; }
+.fs-64 { font-size: 64px; }
+
+.text-center{
+  text-align: center;
+}
+
+.text-primary{
+  color:var(--primary)
+}
+.text-scondary{
+  color:var(--secondary)
+}
+
+.font-caveat {
+  font-family: 'Caveat';
+}
+
+.bold {
+  font-weight: bold;
+}
+/* ? Components */
+.btn{
+  border: none;
+  background-color: var(--primary);
+  color: white;
+  border-radius: 5px;
+  padding: 0.8rem 1.2rem;
+}
+.btn--outlined{
+  border: none;
+  color: var(--primary);
+  border:1px solid var(--primary);
+  border-radius: 5px;
+  padding: 0.8rem 1.2rem;
+}
+.btn--flat{
+  border: none;
+  color: var(--primary);
+  background-color: transparent;
+  border:none;
+  padding: 0.8rem 1.2rem;
+}

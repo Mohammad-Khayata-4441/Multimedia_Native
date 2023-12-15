@@ -1,0 +1,32 @@
+:root {
+  --primary: #4d803b;
+  --secondary: #fedb27;
+  --bg-light:#fafafa;
+  --foreground:#464646;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul{
+    list-style: none;
+}
+
+body{
+  background-color: var(--bg-light) ;
+  color:var(--foreground);
+}
+
+a{
+  color:var(--foreground);
+  text-decoration: none;
+  
+}
+
+
+section:not(:first-child) {
+  margin-top: 4rem;
+}
