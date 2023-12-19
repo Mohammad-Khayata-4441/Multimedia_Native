@@ -20,4 +20,4 @@ document.getElementById('year').innerHTML = new Date().getFullYear()
 
 
 // ? Initialize Animation Library
-AOS.init()
+// AOS.init()
