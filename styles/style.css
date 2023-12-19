@@ -1,9 +1,13 @@
 /* ! Navbar */
-
+header{
+  position: sticky;
+  z-index: 10;
+  top: 0;
+}
 .navbar {
   background-color: white;
   box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.251);
-  position: relative;
+  position: sticky;
 }
 .navbar .navbar__content {
   display: flex;
@@ -19,16 +23,24 @@
   padding: 1rem 2.5rem;
   left: 0;
   flex-direction: column;
-  gap: 2rem;
+  gap:1rem 2rem;
+  
 }
 
-.navbar__nav.open ul {
+.navbar.open ul {
   display: flex;
+}
+
+.navbar .toggle-btn{
+  display: block;
 }
 
 @media (min-width: 991px) {
   .navbar .navbar__content {
     flex-direction: row;
+  }
+  .navbar .toggle-btn{
+    display: none;
   }
   .navbar__nav ul {
     flex-direction: row;
@@ -117,9 +129,25 @@
     justify-content: flex-start;
   }
 }
-
+@media (max-width: 769px) {
+  .hero #underline {
+    width: 100%;
+  }
+  .hero .hero__desc {
+    text-align: center;
+  }
+}
 /* ! About */
-
+@media (max-width: 768px) {
+  #about p,
+ #about h1,
+ #about h2 {
+    text-align: center;
+  }
+}
+.about * {
+  text-align: center;
+}
 /* !Why Us */
 
 .why-us .grid {
@@ -184,14 +212,14 @@
 }
 
 @media (min-width: 992px) {
- .services .grid {
-   grid-template-columns: repeat(2 , 1fr);
- }
+  .services .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 @media (min-width: 1280px) {
- .services .grid {
-   grid-template-columns: repeat(3 , 1fr);
- }
+  .services .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 /*
 
@@ -256,17 +284,15 @@
 .contact form {
   margin-top: 2rem;
 }
-.contact form  button{
-
+.contact form button {
   margin-top: 1rem;
 }
 
 @media (max-width: 992px) {
-  img{
+  img {
     max-width: 320px;
   }
   .contact .contact-wrapper {
-    
     display: flex;
     flex-direction: column-reverse;
   }
@@ -276,8 +302,36 @@ input,
 textarea {
   height: 45px;
   border: 1px solid #ccc;
+  margin-bottom: 15px;
 }
 
+
+ 
+footer {
+  margin-top: 20px;
+  background-color: var(--primary);
+  color: #fff;
+  text-align: center;
+  padding:10px;
+  width: 100%;
+}
+
+.social-icons {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.social-icons li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.social-icons a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 24px;
+}
 
 
 /* portfolio-image-outline
